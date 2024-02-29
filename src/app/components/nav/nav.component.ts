@@ -43,20 +43,20 @@ export class NavComponent {
     });
   }
 
-  isSearchActive: boolean = false;
-  isMobileMenuOpen: boolean = false;
+  isMobileMenuOpen = false;
+  isSearchActive = false;
 
-  toggleSearch(): void {
-    this.isSearchActive = !this.isSearchActive;
-  }
-  toggleMobileMenu(): void {
-    console.log("running");
+  toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
-    console.log(this.isMobileMenuOpen);
+  }
+
+  toggleSearch() {
+    this.isSearchActive = !this.isSearchActive;
   }
   
   navigateTo(route: string) {
     this.router.navigateByUrl(route);
+    this.isMobileMenuOpen = false;
   }
 
 

@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Lato', 'Arial', sans-serif;
+  z-index: 10;
 }
 
 
@@ -244,6 +245,8 @@ input {
   .mobile-nav {
   transform: translate(0%)!important;
 }
+
+
 
   
   /* SEARCH DISABLED ON MOBILE */
